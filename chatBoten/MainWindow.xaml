@@ -1,0 +1,28 @@
+﻿<Window x:Class="chatBoten.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:chatBoten"
+        mc:Ignorable="d"
+        Title="Chatbot" Height="600" Width="650">
+    <Grid HorizontalAlignment="Center" Width="490" Height="500
+          
+          ">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="487*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="largeTitle" Content="CHATBOTTEN" HorizontalAlignment="Left" Margin="150,67,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="30" Grid.ColumnSpan="2" Height="50" Width="190"/>
+        <Button x:Name="HelpButton" Content="Hjälp med inloggning" HorizontalAlignment="Left" Margin="50,435,0,0" VerticalAlignment="Top" Width="185" Height="55" FontSize="18" Foreground="White" Background="#FF7C7C7C" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button x:Name="HelpButton_Copy" Content="Hjälp med inloggning" HorizontalAlignment="Left" Margin="10,435,0,0" VerticalAlignment="Top" Width="186" Height="55" FontSize="18" Foreground="White" Background="#FF7C7C7C" Click="HelpButton_Copy_Click" Grid.RowSpan="2"/>
+        <Label x:Name="hjalp" Content="Hjälp med inloggning" HorizontalAlignment="Left" Margin="80,-3,0,0" VerticalAlignment="Top" IsEnabled="False" Visibility="Hidden" Height="26" Width="127"/>
+        <Label x:Name="Navarrow" Content="----&gt;" HorizontalAlignment="Left" Margin="34,-3,0,0" VerticalAlignment="Top" Visibility="Hidden" Height="26" Width="37"/>
+        <Button x:Name="homebutton" Content="Hem" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF686868" Background="White" BorderBrush="White" Height="20" Width="29" Click="homebutton_Click"/>
+
+    </Grid>
+</Window>
